@@ -1,4 +1,6 @@
 require('dotenv').config();
+console.log('PGHOST:', process.env.PGHOST);
+
 const amqp = require('amqplib');
 const NotesService = require('./NotesService');
 const MailSender = require('./MailSender');
